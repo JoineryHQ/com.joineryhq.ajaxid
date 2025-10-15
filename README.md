@@ -10,7 +10,7 @@ isCivicrmApi: 1,
 ```
 
 ### AJAX API examples:
-Consid3er a CiviCRM AJAX API call made by the Stripe extension to
+Consider a CiviCRM AJAX API call made by the Stripe extension to
 `https://example.org/civicrm/ajax/api4/StripePaymentintent/ProcessPublic`.
 Without this extension. It will have a payload like so:
 ```
