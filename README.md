@@ -25,7 +25,6 @@ Without this extension. It will have a payload like so:
     "csrfToken":"1748372284.a50641f549904dea2473c383.0203fda6a9d5727a25246fe880b151702a064f08fbdfc37983d81b3183462be6",
     "captcha":""
   }
-  isCivicrmApi: 1
 }
 ```
 
