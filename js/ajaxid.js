@@ -1,16 +1,22 @@
 (function($, ts) {
   var ajaxId = {
+    /**
+     * For a give jqHR, if it's a call to civicrm ajax api, mark it as such by
+     * appending an entry `isCivicrmApi: 1` to the data object.
+     */
     markCivicrmApiRequest: function markCivicrmApiRequest(jqXHR, settings) {
-      console.log('markCivicrmApiRequest ...')
       if (ajaxId.urlIsCivicrmApi(settings.url)) {
-        console.log('is api');
         searchParams = new URLSearchParams(settings.data); 
         searchParams.set('isCivicrmApi', 1);
         settings.data = searchParams.toString();
       }
     },
+    /**
+     * Detect whether a given URL is a call to CiviCRM ajax api on this site.
+     */
     urlIsCivicrmApi: function urlIsCivicrmApi(url) {
-      var baseApiUrl = CRM.url('civicrm/ajax/api');
+      // Generate a base url which will match ajax api3 or api4:
+      var baseApiUrl = CRM.url('civicrm/ajax/api').replace(/\/$/, '');
       if (url.startsWith(baseApiUrl)) {
         return true;
       }

@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <extension key="com.joineryhq.ajaxid" type="module">
   <file>ajaxid</file>
-  <name>com.joineryhq.ajaxid</name>
-  <description>FIXME</description>
+  <name>AJAX API Identifier</name>
+  <description>Simple utility extension to flag all CivCRM AJAX API calls with an easily identifiable data payload object member.</description>
   <license>GPL-3.0</license>
   <authors>
     <author>
@@ -12,18 +12,18 @@
     </author>
   </authors>
   <urls>
-    <url desc="Main Extension Page">https://FIXME</url>
-    <url desc="Documentation">https://FIXME</url>
-    <url desc="Support">https://FIXME</url>
+    <url desc="Main Extension Page">https://github.com/JoineryHQ/com.joineryhq.ajaxid</url>
+    <url desc="Documentation">https://github.com/JoineryHQ/com.joineryhq.ajaxid</url>
+    <url desc="Support">https://github.com/JoineryHQ/com.joineryhq.ajaxid/issues</url>
     <url desc="Licensing">https://www.gnu.org/licenses/gpl-3.0.html</url>
   </urls>
-  <releaseDate>2025-10-01</releaseDate>
+  <releaseDate>2025-10-15</releaseDate>
   <version>1.0.0</version>
-  <develStage>alpha</develStage>
+  <develStage>stable</develStage>
   <compatibility>
     <ver>6.4</ver>
   </compatibility>
-  <comments>This is a new, undeveloped module</comments>
+  <comments>Modifies CiviCRM AJAX API calls by adding a data field to the payload (see linked documentation)</comments>
   <classloader>
     <psr0 prefix="CRM_" path="."/>
     <psr4 prefix="Civi\" path="Civi"/>
